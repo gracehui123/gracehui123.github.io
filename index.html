@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grace Hui | Portfolio</title>
+        <meta name="description" content="Grace Hui, Computer Science and ITWS student at RPI. Software engineering, data science, and IT portfolio."/>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="styles.css?v=15" />
+    </head>
+
+    <body>
+        <header class="site-header">
+            <a class="brand-link" href="#top" aria-label="Grace Hui home">Grace Hui</a>
+            <nav class="top-nav" aria-label="Primary navigation">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main id="top">
+            <section class="hero folder-sheet" id="about" aria-labelledby="hero-title">
+                <div class="page-shell">
+                <p class="sheet-tab">01 About</p>
+                <div class="hero-heading">
+                    <div>
+                    <p class="eyebrow">Grace Hui</p>
+                    <h1 id="hero-title">About Me</h1>
+                    </div>
+                    <div class="menu-lines" aria-hidden="true"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-copy">
+                    <p class="about-lead"> 
+                        Hi, I am Grace, a Computer Science and ITWS student at RPI.
+                        I enjoy using machine learning, data, and web development to build practical software.
+                    </p>
+                    <p>
+                        Recently, I’ve worked on projects involving Python, Flask, SQL, TypeScript, and AWS, and I’m always looking for opportunities to learn new technologies and apply what I learn to projects.
+                    </p>
+                    <div class="hero-actions" aria-label="Portfolio links">
+                        <a class="button primary" href="Grace_Hui_Resume.pdf" download="Grace_Hui_Resume.pdf">Resume</a>
+                        <a class="button projects-button" href="#projects">Projects</a>
+                    </div>
+                    </div>
+
+                    <figure class="profile-photo">
+                    <div class="photo-placeholder" aria-label="Profile photo">
+                        <img src="headshot.JPG" alt="Grace Hui">
+                    </div>
+                    </figure>
+
+                    <aside class="contact-panel" id="contact" aria-label="Contact and social links">
+                    <div>
+                        <h2>Contact</h2>
+                        <a href="mailto:gracehui30@gmail.com">gracehui30@gmail.com</a>
+                    </div>
+                    <div>
+                        <h2>Socials</h2>
+                        <a href="https://www.linkedin.com/in/hui-grace/" target="_blank" rel="noreferrer">LinkedIn</a>
+                        <a href="https://github.com/gracehui123" target="_blank" rel="noreferrer">GitHub</a>
+                    </div>
+                    </aside>
+                </div>
+                </div>
+            </section>
+
+            <section class="section folder-sheet" id="projects" aria-labelledby="projects-title">
+                <div class="page-shell">
+                <p class="sheet-tab">02 Projects</p>
+                <div class="section-heading">
+                    <h2 id="projects-title">Projects</h2>
+                </div>
+
+                <div class="project-list" aria-label="Project list">
+                    <article class="project-card">
+                    <div class="project-thumb locust" aria-hidden="true">
+                        <span>01</span>
+                    </div>
+                    <div class="project-detail">
+                        <h3>Locust Infestation Prediction System</h3>
+                        <p class="tech">Python, Flask, Google Earth Engine, scikit-learn</p>
+                        <p>Acquired and processed satellite and weather data from Google Earth Engine and NASA sources to create features for predicting locust infestation risk. 
+                            Trained and evaluated KNN and Random Forest classifiers on 50,000 satellite and weather observations using confusion matrices, precision, recall, and F1-score; 
+                            Random Forest achieved 91% accuracy compared with 74% for KNN. Built a Flask backend that processed user input and served model predictions through a web interface.</p>
+                        <p>GitHub (Private)</p>
+                    </div>
+                    </article>
+
+                    <article class="project-card">
+                    <div class="project-thumb studio" aria-hidden="true">
+                        <span>02</span>
+                    </div>
+                    <div class="project-detail">
+                        <h3>Core Flow Movement Pilates Studio</h3>
+                        <p class="tech">Next.js, Resend, Stripe, AWS (Lambda, API Gateway, S3, CloudFront, Cognito, DynamoDB)</p>
+                        <p>
+                        Built and deployed a production serverless booking platform for a Pilates studio, providing an alternative to a third-party service priced at $599/month. 
+                        Developed end-to-end booking and payment workflows with Amazon Cognito and Stripe, including memberships, class packs, waitlists, credit tracking, customer accounts, and an admin dashboard. 
+                        </p>
+                        <div class="project-links">
+                            <a href="https://coreflowmovement.com" target="_blank" rel="noreferrer">Website</a>
+                        </div>
+                    </div>
+                    </article>
+
+                    <article class="project-card">
+                    <div class="project-thumb rank" aria-hidden="true">
+                        <span>03</span>
+                    </div>
+                    <div class="project-detail">
+                        <h3>Girls Who Code RPI</h3>
+                        <p class="tech">HTML • CSS</p>
+                        <p>Built the club website showcasing club goals, past and upcoming events, outreach resources, and club members.</p>
+                        <div class="project-links">
+                            <a href="https://girlswhocoderpi.github.io/" target="_blank" rel="noreferrer">Website</a>
+                        </div>
+                    </div>
+                    </article>
+
+                    <article class="project-card">
+                    <div class="project-thumb yarn" aria-hidden="true">
+                        <span>04</span>
+                    </div>
+                    <div class="project-detail">
+                        <h3>Craft Corner</h3>
+                        <p class="tech">React, Next.js, Typescript, Gemini API, Google Photos API, Pinterest API</p>
+                        <p>
+                            Built an app to organize a digital yarn inventory and recommend projects by matching saved craft ideas from Pinterest against the user’s yarn stash. 
+                            Integrated Gemini to extract yarn attributes from uploaded photos and create structured inventory records, alongside Google OAuth and the Google Photos API for uploading craft images to authorized albums. 
+                        </p>
+                        <div class="project-links">
+                            <a href="https://craftcorner1.vercel.app/" target="_blank" rel="noreferrer">Website</a>
+                        </div>
+                    </div>
+                    </article>
+                </div>
+                </div>
+            </section>
+
+            <section class="section folder-sheet" id="skills" aria-labelledby="skills-title">
+                <div class="page-shell">
+                <p class="sheet-tab">03 Skills</p>
+                <div class="section-heading">
+                    <h2 id="skills-title">Skills</h2>
+                </div>
+
+                <div class="skills-layout">
+                    <article class="skill-group">
+                    <h3>Languages</h3>
+                    <ul class="skill-tags">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>C</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>R</li>
+                        <li>SQL</li>
+                    </ul>
+                    </article>
+
+                    <article class="skill-group">
+                    <h3>Frameworks and Tools</h3>
+                    <ul class="skill-tags">
+                        <li>HTML/CSS</li>
+                        <li>React</li>
+                        <li>API</li>
+                        <li>MySQL</li>
+                        <li>Node.js</li>
+                        <li>MongoDB</li>
+                        <li>Express</li>
+                        <li>Flask</li>
+                        <li>Git/GitHub</li>
+                    </ul>
+                    </article>
+
+                    <article class="skill-group">
+                    <h3>Cloud Services and Project Management</h3>
+                    <ul class="skill-tags">
+                        <li>AWS</li>
+                        <li>Azure</li>
+                        <li>Agile (Scrum)</li>
+                    </ul>
+                    </article>
+                </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Grace Hui</p>
+            <div>
+                <a href="mailto:gracehui30@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/hui-grace/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="https://github.com/gracehui123" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+        </footer>
+    </body>
+
+</html>
